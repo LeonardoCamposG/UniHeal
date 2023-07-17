@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Tratamento">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/txtComoTratarFerida"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#50C878"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Como Tratar Feridas"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCardLimpeza"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayoutLimpeza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtLimpeza"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Limpeza da Ferida"
+                        android:textColor="#FF50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/idTxLimpezaDaFerida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nA maioria dos pequenos ferimentos pode ser tratada com uma simples limpeza utilizando água e sabão neutro. Lave as mãos antes de entrar em contato com a ferida. Lave com suavidade até retirar toda a sujeira, como terra, areia e outros detritos. Não esfregue com muita força e, se a ferida for pequena, deixe secar naturalmente. Se houver bolhas, não as estoure nem aplique nenhum remédio caseiro, como vaselina, pasta de dente ou manteiga. Lave apenas com água fria e sabão."
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCardCurativos"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayoutCurativos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtCurativos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Curativos Prontos"
+                        android:textColor="#FF50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/idTxtCurativosProntos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nJamais use fita adesiva ou fita microporosa diretamente sobre uma ferida. Caso o corte seja pequeno, aplique um curativo do tipo biotecnológico, para proteger a lesão e evitar que, ao retirar o curativo, o local da ferida sofra uma nova agressão. Curativos deste tipo são ideais para pequenos ferimentos em locais do corpo que entram sempre em contato com agentes como água, sujeira, componentes químicos. "
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCardGaze"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayoutGaze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtGaze"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gaze, Atadura e Fita Microporosa"
+                        android:textColor="#FF50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/idTxtGazeAtadura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nSe a ferida tiver uma extensão maior, mas ainda não precisar de pontos, pode-se fazer um curativo usando gaze, ataduras e fita microporosa. Mas o ideal são curativos biotecnológicos. Lave as mãos e utilize luvas descartáveis ao entrar em contato com a ferida. Limpe o local com soro fisiológico, para remover sangue, secreções, sujeiras e para manter local ferido hidratado.\n É importante nunca aplicar um curativo sobre a ferida seca e com qualquer tipo de detrito, pois irá prejudicar a cicatrização e a remoção do curativo, quando a troca for necessária.\n Nunca aplique algodão ou gaze que solte fibras ou fiapos, pois estes irão aderir ao machucado, dificultando sua cicatrização. Dê preferência à curativos feitos de celulose bacterianas, de uso individual.\n Aplique a esse tipo de curativo no ferimento limpo. "
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCardCurativoCompressao"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayoutCurativoCompressao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtCurativoCompressao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Curativo de Compressão"
+                        android:textColor="#FF50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/idTxtCurativosDeCompressao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nÉ o tipo de curativo feito para conter sangramentos. Utiliza-se a pressão para que a pele pare de sangrar e então possam ser feitos outros procedimentos necessários, como curativos especiais (feitos em hospitais ou por profissionais habilitados) ou pontos para suturar (unir) a pele ferida.\n É preciso certo cuidado ao se fazer este tipo de curativo, pois se o sangramento for muito intenso ou em jatos, é preciso procurar ajuda médica de emergência. "
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCardCurativoOclusivo"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayoutCurativoOclusivos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtCurativoOclusivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Curativos semi-oclusivos ou oclusivos"
+                        android:textColor="#FF50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/idTxtCurativosOclusivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nSão curativos que isolam o ferimento de acordo com o grau da lesão e o material utilizado. Dependendo do tipo de ferida, pode ser desejável que a pele respire e a lesão entre em contato com o ar. Se houver um pequeno sangramento ou secreção, o curativo é capaz de absorver sem deixar que os líquidos voltem a entrar em contato com a ferida.\n Já o curativo oclusivo é aquele que fecha totalmente a ferida, quando a pele precisa ficar totalmente isolada do ambiente externo e do possível contato com bactérias e fungos. Precisa absorver totalmente os líquidos (sangue, secreções, pus) e manter o isolamento térmico da pele. Geralmente é feito pelo profissional de saúde, mas se a lesão for crônica ou de tratamento mais prolongado, pode haver orientação para que o curativo possa ser trocado em casa, pelo paciente ou por seus conviventes. Tudo depende, porém, da avaliação do médico."
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCardCuidados"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayoutCuidados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtCuidados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cuidados com os curativos"
+                        android:textColor="#FF50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/idTxtCuidadosCurativos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nDeve-se trocar o curativo de acordo com a orientação médica: em um intervalo de algumas horas, diariamente ou dentro de um número determinado de dias. Caso a ferida seja de pequena extensão e o curativo possa ser trocado em casa, fique atento à limpeza deste curativo e mantenha a higiene das mãos e do local a ser tratado, assim como dos materiais utilizados, que devem ser descartáveis e utilizados no momento da abertura da embalagem. Nunca tente fazer um curativo sozinho se a ferida estiver grande demais, sangrando muito, dolorida, aberta e precisando de pontos, a menos que você tenha recebido treinamento para isto. Jamais lamba o ferimento ou aplique qualquer remédio caseiro sobre ele. A saliva humana possui milhares que bactérias que podem piorar uma infecção ou infeccionar uma ferida limpa, e remédios caseiros podem piorar o estado da lesão, em vez de ajudar na cura e na cicatrização. Procure sempre ajuda médica para cuidar de seus ferimentos. "
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Cicatrizacao">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/txtCicatrizacao"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#50C878"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="Processo de Cicatrização"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="A regeneração e formação de lesão pode variar de pessoa para pessoa, dependendo do tipo da lesão e de fatores influenciadores como idade, estado nutricional, doenças crônicas, terapia medicamentosa e tratamento tópico inadequado. Apesar de cada caso ser único, geralmente há três fases distintas da cicatrização que levam à regeneração tecidual e formação de tecido cicatricial, sendo elas:"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="1- Fase Inflamatória"
+                android:textColor="#50C878"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="A fase inflamatória da cicatrização é caracterizada pela presença de secreção, que pode durar de um a quatro dias, dependendo da extensão e natureza da lesão. Durante esse período, há ativação do sistema de coagulação sanguínea e liberação de mediadores químicos, o que pode resultar em edema, vermelhidão e dor."
+                android:layout_margin="20dp"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/fase_inflamatoria_1024x1024" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="2- Fase Proliferativa"
+                android:textColor="#50C878"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                android:text="Durante a fase proliferativa, que pode durar de 5 a 20 dias, ocorre a regeneração do tecido lesionado através da proliferação de fibroblastos, processo chamado de 'fibroplasia'. Durante esse período, ocorre também a proliferação de células endoteliais, resultando em uma rica vascularização e infiltração de macrófagos, formando o tecido de granulação."
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fase_proliferativa_1024x1024" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="3- Fase de Reparo"
+                android:textColor="#50C878"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Essa é a fase final do processo de cicatrização e pode durar vários meses. Nessa fase, a densidade celular e vascularização diminuem, resultando na remodelação do tecido cicatricial formado na fase anterior. As fibras são realinhadas para aumentar a resistência do tecido e melhorar o aspecto da cicatriz. Durante esse período, a tonalidade da cicatriz muda gradualmente, passando de um vermelho escuro para um tom rosa claro." />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fase_de_maturacao_1024x1024" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCard4"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtAceleramCicatrizacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fatores que aceleram a cicatrização"
+                        android:textColor="#FF50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/idTxtAceleramCicatrizacaoConteudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nAlgumas medidas podem ser tomadas para acelerar o processo cicatricial, que inclui as três fases mencionadas anteriormente. Manter o corpo hidratado é fundamental para uma boa cicatrização, bebendo pelo menos 2 litros de água por dia. Além disso, uma dieta equilibrada com proteínas, carboidratos e gorduras pode ajudar a acelerar a regeneração da pele."
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCard5"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtInterferemCicatrizacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fatores que podem interferir na cicatrização"
+                        android:textColor="#FF50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+
+                    <!--CONTEÚDO DO TITULO-->
+                    <TextView
+                        android:id="@+id/idTxtInterferemCicatrizacaoConteudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nExistem fatores que podem retardar o processo de cicatrização da pele, aumentando o tempo de recuperação e causando possíveis complicações e prejuízos estéticos e funcionais. Esses fatores são classificados em locais (1) e sistêmicos (2). "
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <!-- 1° SUBTITULO -->
+                    <TextView
+                        android:id="@+id/idTxtFatoresLocais"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\n1 - Fatores Locais (relacionados diretamente à ferida)"
+                        android:textColor="#FF50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <!-- CONTEUDO DO 1°SUBTITULO -->
+                    <TextView
+                        android:id="@+id/idTxtFatoresLocaisConteudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nCaracterísticas da lesão: tamanho, profundidade, aparência da secreção, hematomas, edemas e presença de corpos estranhos. Cuidados: limpeza, materiais e curativos utilizados. Isquemia tecidual: a falta de oxigenação dificulta a proliferação das células. Infecção local: quando o processo de cicatrização é retardado devido à contaminação bacteriana."
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <!-- 2° SUBTITULO -->
+                    <TextView
+                        android:id="@+id/idTxtFatoresSistemicos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\n2 – Fatores sistêmicos (que dizem respeito ao indivíduo)"
+                        android:textColor="#FF50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <!-- CONTEUDO DO 2° SUBTITULO -->
+                    <TextView
+                        android:id="@+id/idTxtFatoresSistemicosConteudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nIdade: a idade avançada pode retardar a fase inflamatória e a regeneração tecidual. \n\nEstado nutricional: uma dieta desequilibrada e deficiente em proteínas e vitaminas pode afetar todas as fases da cicatrização, diminuindo a resposta imunológica e a síntese de colágeno, o que pode resultar em deiscência de suturas e demora na cicatrização. \n\nDoenças crônicas: diabetes mellitus, obesidade, hipertensão e outras doenças crônicas podem prejudicar a cicatrização, interferindo na resposta imunológica e na regeneração tecidual. \n\nTerapia medicamentosa: medicamentos como antiinflamatórios, antibióticos e quimioterápicos podem interferir no processo cicatricial, retardando ou prejudicando a regeneração tecidual. \n\nTratamento tópico inadequado: o uso de produtos inadequados para a limpeza e curativo da ferida, como sabão comum, pode prejudicar a cicatrização. \n\nDistúrbios cicatriciais: distúrbios na cicatrização, como atrofia cicatricial, cicatriz hipertrófica e queloides, podem ocorrer em algumas pessoas, comprometendo a estética e a funcionalidade da cicatriz."
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

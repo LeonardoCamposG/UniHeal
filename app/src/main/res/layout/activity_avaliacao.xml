@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Avaliacao">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/txtFeridas"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#50C878"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Avaliação de Feridas"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCard1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtAvaliacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AVALIAÇÃO"
+                        android:textColor="#FF50C878"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/idTxtAvalicaoConteudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nPara entender e avaliar qual é o tipo de ferida que você possui é fundamental acompanhar a evolução do processo cicatricial, a cobertura da ferida e os produtos utilizados, devendo estar acompanhado de profissional da saúde para realizar esta avaliação."
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCard3"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtIdentificacaoConteudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nPara identificar se a sua ferida está infeccionada é necessario olhar atentamente a região afetada. Observe a ferida, se a pele ao seu redor está avermelhada. A região em volta da ferida está quente? O leito da ferida apresenta coloração esverdeada ou amarelada? Existe dor ao tocar a região ferida? Se houver algum desses sintomas, a ferida provavelmente está infeccionada. A existência de pus ou secreção, principalmente de cor amarelada ou esverdeada e mais espessa, também é um indicativo de infecção. É normal que algumas feridas apresentem secreção, mas esta é fluida e de cor clara. Porém, não necessariamente uma ferida que não apresenta pus deixa de estar infeccionada. A diferença está apenas na evolução deste ferimento. Assim, havendo qualquer uma destas condições, a recomendação é que se procure ajuda médica o quanto antes, pois existem formas específicas de tratar cada tipo de ferida. \n \n  Caso a sua ferida já esteja contaminada, não recorra à automedicação. Evite tocar a ferida, para afastar o risco de contaminação e infecção em outras partes do corpo. Assim, procure imediatamente um médico para o tratamento correto e o uso de curativos adequados o quanto antes, evitando que a infecção avance e chegue a outras partes do corpo."
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/idTxtIdentificacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IDENTIFICAÇÃO DE FERIDAS INFECCIONADAS"
+                    android:textColor="#FF50C878"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="expandCard2"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/idLLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idTxtRYB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RYB:  SISTEMA DE AVALIAÇÃO DE FERIDAS POR CORES"
+                        android:textColor="#FF50C878"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/idTxtRYBConteudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nO sistema de cores RYB é usado para identificar facilmente os tipos de tecido da e qual o seu respectivo tratamento. O nome, do inlgês, é a sigla das cores utilizadas: Vermelho (Red), Amarelo (Yellow) e Preto (Black).  \n \n  Se a sua ferida for vermelha, o intuito é proteger ela, evitando contato com outros tecidos. Se for na coloração amarela, vc tem que fazer a limpeza dela para evitar infecções. Já se for preta, você deve fazer o debridamento, que é o ato de remover o tecido necrosado."
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="40dp"
+                app:srcCompat="@drawable/ryb_image" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

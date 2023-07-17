@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".Curiosidades">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtCuriosidades"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#50C878"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Curiosidades"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="expand"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fatos Históricos"
+                        android:textColor="#50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nOs humanos da pré-história já usavam plantas e seus extratos para o estancamento de feridas e umidificação de feridas aberta. Uma dessas primeiras ‘’bandagens’’ era o cataplasma, uma substância preparada com farinha de mandioca ou fubá, linhaça e massa de argila colocada entre dois panos, que no final era usada para a absorção de toxinas na pele e para tratar hematomas.\n\n
+    Graças as guerras que ocorrerão por volta da Revolução Industrial, a pólvora foi introduzida no mundo ocidental. As feridas causadas por pólvoras eram venosas, fazendo necessário amputar a parte lesada para cauterizar o coto com óleo fervente. Porém nessa época sofreram de falta de óleo, que foi substituído por gema de ovo e óleo de rosa, aumentando a taxa de sobrevida (o tempo de vida) da população."
+                        android:textSize="20sp"
+                        android:visibility="gone"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="expan"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/Cicatriz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cicatrização"
+                        android:textColor="#50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detalhe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nFatores que influenciam a cicatrização:\n\n
+    -Desnutrição\n
+    -Infecção\n
+    -Técnica cirúrgica\n
+    -Corpo estranho\n
+    -Doenças crônicas\n
+    -Drogas\n
+    -Psicossocial: baixa autoestima, depressão dentre outros problemas podem levar a pessoa a diminuir a produção de substâncias que auxiliam ou são responsáveis pelo processo de cicatrização.\n\n
+    A cicatrização possui 3 fases:\n
+    -Fase de inflamação ou exsudativa\n
+    -Fase proliferativa\n
+    -Fase de maturação ou remodelagem do colágeno\n
+    "
+                        android:textSize="20sp"
+                        android:visibility="gone"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="expandir"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/Evoluçao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evoluções"
+                        android:textColor="#50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/descriçao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nEvoluções que favoreceram a melhoria no tratamento de feridas:\n\n
+    -1676: descoberta do microscópio\n\n
+    -1752: primeiro passo da desinfecção, com o uso de ácidos minerais para prevenir e impedir a putrefação.\n\n
+    -1860: primeiro curativo absorvente à base de algodão\n\n
+    -1880: construída com êxito a primeira estufa, vindo permitir a esterilização pelo calor seco. Dois anos depois surgiu a esterilização pelo vapor.\n\n
+    -Final de 1840: utilização de antissépticos e a proteção da lesão com coberturas secas. Descobrimento do efeito antisséptico do lodo, mercúrio e Alumínio.\n\n
+    -1890 e 1897: introdução das máscaras e luvas.\n\n
+    -1960: descobertas das suturas, controle de infecção limpeza de feridas.
+    "
+                        android:textSize="20sp"
+                        android:visibility="gone"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="aumentar"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:contentPadding="20dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/Extra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Extra"
+                        android:textColor="#50C878"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="\nÉ direito do consumidor ser informado dos possíveis riscos que podem ser oferecidos a sua saúde ou segurança antes de comprar um produto ou utilizar um serviço. Se esse for prejudicado, o consumidor tem o direito de ser indenizado por quem lhe prestou o serviço, inclusive por danos morais.\n\n
+    Quem realiza a cicatrização da ferida é o próprio organismo do portador da lesão. Os profissionais podem tanto ajudar quanto atrapalhar esse processo, mas quem realiza a cicatrização é o próprio organismo da pessoa.\n\n
+    Pele:\n\n
+    A pele é o nosso maior órgão, compondo aproximadamente 15% do nosso peso corporal. Um adulto é revestido por aproximadamente 2m2 de pele.\n\n
+    Ela é dividida em três camadas: epiderme, derme e hipoderme.\n\n
+    Funções:\n
+    -Proteção de estruturas internas\n
+    -Percepção sensorial\n
+    -Regulação de temperatura corporal\n
+    -Excreção e absorção\n"
+                        android:textSize="20sp"
+                        android:visibility="gone"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
